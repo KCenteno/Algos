@@ -4,15 +4,18 @@
 var containsDuplicate = function(nums) {
     for(var i = 0; i < nums.length; i++) {
         for(var j = i + 1; j < nums.length; j++) {
-            if (nums[i] == nums[j])
-            return true;
+            if (nums[i] == nums[j]) {
+                return true;
+            }
         }
-        return false;
     }
+    return false;
 };
 
 numss = [1,2,3,4]
 nums = [1,2,3,1]
+numsss = [1,2,3,4,4]
 
 console.log(containsDuplicate(nums));
 console.log(containsDuplicate(numss));
+console.log(containsDuplicate(numsss));
