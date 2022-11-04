@@ -1,3 +1,6 @@
+# how to shift a pointer based off of a condition
+# use two pointers the difference in values
+
 def maxProfit(prices):
         l, res = 0, 0
         for r in range(1, len(prices)):
